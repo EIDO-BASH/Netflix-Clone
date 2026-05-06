@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="nav-start">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/Logo.png" alt="" style="width: 80px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carousel1"
+                  >TV shows</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carousel3"
+                  >Movies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#carousel2">New and popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#carouselExample">My List</a>
+              </li>
+            </ul>
+
+            <form class="ms-lg-5" role="search" style="max-width: 200px">
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="search"
+                  aria-label="search"
+                  aria-describedby="addon-wrapping"
+                />
+                <span class="input-group-text" id="addon-wrapping">
+                  <i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </div>
+            </form>
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="rounded my-3"
+                    src="https://plus.unsplash.com/premium_photo-1738592736106-a17b897c0ab1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW5pbWF0ZWQlMjBmYWNlfGVufDB8fDB8fHww"
+                    alt=""
+                    style="width: 80px"
+                  />
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#" id="switch">Switch </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li>
+                    <a class="dropdown-item" id="logout">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="cover d-lg-none d-flex align-items-center">
+              <i
+                class="fa-solid fa-bell fa-flip-horizontal fa-xl my-4 d-sm-none"
+              >
+              </i>
+              <h6 class="d-lg-none d-block mx-1">notifications</h6>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="carousel-behind">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img
+              src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YW5pbWV8ZW58MHx8MHx8fDA%3D"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://images.unsplash.com/photo-1493515322954-4fa727e97985?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFuaW1lfGVufDB8fDB8fHww"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1674718013659-6930c469e641?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFuaW1lfGVufDB8fDB8fHww"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIRST ROW OF CAROUSELS -->
+    <section class="first_row mt-5">
+      <div id="carouselExample" class="carousel slide">
+        <div class="a carousel-inner container-fluid">
+          <h5 class="top-tag">My list</h5>
+
+          <div class="b carousel-item active">
+            <div class="row">
+              <!-- FIRST SLIDE -->
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 rounded-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/27047903.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/30851137.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/27613895.jpg"
+                class="col-3 col-lg-2 img-fluid d-none d-lg-block"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/32897959.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://cdn.cinematerial.com/p/136x/z6ja7wfe/den-siste-varen-norwegian-movie-poster-sm.jpg?v=1773167639"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="b carousel-item">
+            <div class="row">
+              <!-- SECOND SLIDE -->
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="b carousel-item">
+            <div class="row">
+              <!-- THIRD SLIDE -->
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev b"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next b"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- SECOND ROW OF CAROUSELS -->
+    <section class="second_row align-items-center my-md-4">
+      <div id="carousel1" class="carousel slide">
+        <div class="a carousel-inner container-fluid">
+          <h5 class="second-tag">Popular on Netflix</h5>
+
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- FIRST SLIDE -->
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- SECOND SLIDE -->
+
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- THIRD SLIDE -->
+
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- THIRD ROW -->
+
+    <section class="second_row align-items-center my-md-5">
+      <div id="carousel2" class="carousel slide">
+        <div class="carousel-inner container-fluid">
+          <h5 class="second-tag">Trending now</h5>
+
+          <div class="carousel-item active">
+            <div class="row p-0">
+              <!-- FIRST SLIDE -->
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- SECOND SLIDE -->
+
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- THIRD SLIDE -->
+
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel2"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel2"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- FOURTH ROW -->
+    <section class="second_row align-items-center my-md-5">
+      <div id="carousel3" class="carousel slide">
+        <div class="a carousel-inner container-fluid">
+          <h5 class="second-tag">My list</h5>
+
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- FIRST SLIDE -->
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- SECOND SLIDE -->
+
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- THIRD SLIDE -->
+
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+              <img
+                src="https://www.cinematerial.com/media/box-office/26443616.jpg"
+                class="col-3 col-lg-2 d-none d-lg-block img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel3"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel3"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

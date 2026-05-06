@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #221f1f;
+}
+/* HOME PAGE STYLING */
+.navbar {
+  background-color: #221f1f !important;
+  color: white !important;
+}
+.navbar-nav {
+  margin-right: 20%;
+}
+.nav-link {
+  color: white !important;
+}
+/* Remove the arrow for all dropdowns */
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu .dropdown-item {
+  overflow-x: hidden !important;
+}
+.carousel-behind .carousel-item img {
+  height: 60vh !important;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-behind .carousel {
+  position: relative;
+}
+.carousel-behind .carousel-inner {
+  position: absolute;
+  z-index: -1;
+}
+h5 {
+  color: white;
+}
+.top-tag {
+  position: relative;
+  top: 30vh;
+}
+.second-tag {
+  position: relative;
+}
+
+.b {
+  margin-top: 30vh;
+}
+.a .carousel-item img {
+  border-radius: 20px;
+}
+
+/* INDEX / LOGIN PAGE STYLING */
+.c {
+  color: #e50914;
+  background-color: #ffffff;
+  height: 80vh;
+  margin-top: 10vh;
+}
+
+.display-5 {
+  font-size: 25px;
+}
+.btn-danger a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #e50914;
+}
+
+/* .navbar-nav {
+  margin-right: 150px;
+} */
+
+/* CREATE ACCOUNTS STYLING */
+.create .input-group .form-control {
+  line-height: 3;
+}
+
+#loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none; /* hidden initially */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Netflix spinner */
+.netflix-spinner {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #e50914;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
